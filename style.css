@@ -1,0 +1,169 @@
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.flex {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsl(31, 77%, 52%);
+  border-radius: 15px;
+  background-color: hsl(31, 77%, 52%);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.grid {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsl(184, 100%, 22%);
+  border-radius: 10px;
+  background-color: hsl(184, 100%, 22%);
+  text-decoration: none;
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 25px;
+  border-radius: 10px 0 0 10px;
+}
+
+.sedan h2 {
+  color: hsl(0, 0%, 95%);
+  padding: 10px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.sedan p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 10px;
+}
+.sedan button {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  border-radius: 25px;
+  border: 1px solid;
+  width: 60%;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sedan button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 25px;
+}
+
+.suv h2 {
+  color: hsl(0, 0%, 95%);
+  padding: 10px;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.suv p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 10px;
+}
+
+.suv button {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px;
+  width: 60%;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.suv button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+.lux {
+  background-color: hsl(179, 100%, 13%);
+  padding: 25px;
+  border-radius: 0 10px 10px 0;
+}
+
+.lux h2 {
+  color: hsl(0, 0%, 95%);
+  padding: 10px;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.lux p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 10px;
+}
+
+.lux button {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px;
+  width: 60%;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lux button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+ @media screen and (max-width:1440px) {
+    main{
+        flex-direction: row;
+    } 
+
+ }        
+@media screen and (max-width: 375px) {
+main{
+    flex-direction: column;
+    width: 60%;
+    height: 200vh;
+}
+header {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+.sedan {
+    
+    border-radius: 10px 10px 0 0px;
+}
+.lux{
+    border-radius: 0 0 10px 10px;
+}
+}

@@ -1,0 +1,86 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(31, 77%, 52%);
+    border-radius: 15px;
+    background-color: hsl(31, 77%, 52%);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid{
+    color: hsla(0, 0%, 100%, 0.75);
+        border: 2px solid hsl(184, 100%, 22%);
+        border-radius: 10px;
+        background-color: hsl(184, 100%, 22%);
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+}
+
+body{
+    background-color: rgb(1, 1, 22); 
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    'a a b'
+    'c d d' 
+    'c e e'
+    ;
+    gap: 10px;
+    width:50%;
+    margin: auto;
+}
+
+main div{
+    padding: 2em;
+    text-align: center;
+
+}
+
+.itema{
+    background-color: orangered;
+    grid-area: a;
+    color: orangered;
+    width: 100%;
+    height: 30vh;
+}
+
+.itemb{
+    background-color: orange;
+    grid-area: b;
+    color: orange;
+    width: 100%;
+}
+
+.itemc{
+    background-color: green;
+    grid-area: c;
+    color: green;
+    width:100%
+}
+
+.itemd{
+    background-color: rgb(13, 165, 216);
+    grid-area: d;
+    color: rgb(13, 165, 216);
+}
+
+.iteme{
+    background-color: rgb(15, 181, 236);
+    grid-area: e;
+    color: rgb(15, 181, 236);
+    height: 20vh;
+}
